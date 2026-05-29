@@ -1,12 +1,12 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import Link from "next/link"
 import Image from "next/image"
 import { Download } from "lucide-react"
 
-export default function CheckoutPage() {
+function CheckoutContent() {
   const searchParams = useSearchParams()
   const device = searchParams.get("device") // "android" or "ios"
   const [mounted, setMounted] = useState(false)
@@ -165,5 +165,17 @@ export default function CheckoutPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function CheckoutPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex min-h-screen items-center justify-center bg-black">
+        <div className="text-white">Loading...</div>
+      </div>
+    }>
+      <CheckoutContent />
+    </Suspense>
   )
 }
