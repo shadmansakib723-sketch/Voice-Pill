@@ -137,7 +137,7 @@ function CheckoutContent() {
 
             {/* CTA Button */}
             <a
-              href="https://test.checkout.dodopayments.com/buy/pdt_0NfsWXoqyBLWTiksLBetr?quantity=1"
+              href="https://checkout.dodopayments.com/buy/pdt_0Ng37tQLuVS8f4dbaioAM?quantity=1"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-white text-base font-bold text-black transition-all hover:bg-white/90 active:scale-[0.98] cursor-pointer touch-manipulation"
