@@ -247,7 +247,7 @@ export default function OnboardingPage() {
 
                 <button
                   type="button"
-                  onClick={() => router.push('/checkout?device=ios')}
+                  onClick={() => router.push('/checkout-ios')}
                   className="group w-full flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.02] p-5 text-left transition-all hover:border-white/30 hover:bg-white/[0.08] active:scale-[0.98] cursor-pointer touch-manipulation"
                 >
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-white/[0.06]">
