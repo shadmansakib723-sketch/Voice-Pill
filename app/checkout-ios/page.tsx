@@ -50,14 +50,6 @@ export default function CheckoutIosPage() {
         <div className="w-full max-w-md">
           {/* Pricing Card */}
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 backdrop-blur-xl mb-6">
-            {/* iOS Badge */}
-            <div className="flex items-center justify-center gap-2 mb-6 pb-6 border-b border-white/10">
-              <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01M12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25" />
-              </svg>
-              <span className="text-lg font-semibold">iOS Web App</span>
-            </div>
-
             {/* Price */}
             <div className="text-center mb-8 pb-8 border-b border-white/10">
               <div className="inline-flex items-baseline gap-1 mb-2">
@@ -103,23 +95,13 @@ export default function CheckoutIosPage() {
                   <p className="text-sm text-white/50 mt-0.5">Build authority and command attention</p>
                 </div>
               </div>
-
-              <div className="flex items-start gap-3">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white mt-0.5">
-                  <svg className="h-3 w-3 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="font-medium text-white">Works on iPhone & iPad</p>
-                  <p className="text-sm text-white/50 mt-0.5">Install as a web app on your home screen</p>
-                </div>
-              </div>
             </div>
 
-            {/* CTA Button - TODO: Add iOS payment link */}
+            {/* CTA Button */}
             <a
-              href="#"
+              href="https://test.checkout.dodopayments.com/buy/pdt_0NgWwMWcSNsOX91ieaL7z?quantity=1"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-14 w-full items-center justify-center gap-2 rounded-full bg-white text-base font-bold text-black transition-all hover:bg-white/90 active:scale-[0.98] cursor-pointer touch-manipulation"
             >
               <Download className="h-5 w-5" />
